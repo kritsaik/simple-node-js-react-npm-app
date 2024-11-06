@@ -6,5 +6,10 @@ pipeline{
                 bat 'npm install'
             }
         }
+        stage('PowerShell'){
+            steps{
+                PowerShell 'C:\\MyScript\\MyScript.ps1'
+            }
+        }
     }
 }
