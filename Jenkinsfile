@@ -8,7 +8,7 @@ pipeline{
         }
         stage('PowerShell'){
             steps{
-                PowerShell 'C:\\MyScript\\MyScript.ps1'
+                powershell 'C:\\MyScript\\MyScript.ps1'
             }
         }
     }
